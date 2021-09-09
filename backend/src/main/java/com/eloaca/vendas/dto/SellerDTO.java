@@ -3,9 +3,7 @@ package com.eloaca.vendas.dto;
 import com.eloaca.vendas.entities.Seller;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 import java.io.Serializable;
 
