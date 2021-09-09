@@ -10,7 +10,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
-import java.io.Serializable;
 import java.util.List;
 
 @Entity(name = "tb_sellers")
@@ -18,9 +17,7 @@ import java.util.List;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Seller implements Serializable {
-
-    private static final long serialVersionUID = 8617564992414945221L;
+public class Seller {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

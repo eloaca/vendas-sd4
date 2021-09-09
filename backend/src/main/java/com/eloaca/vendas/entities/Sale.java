@@ -11,7 +11,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import java.io.Serializable;
 import java.time.LocalDate;
 
 @Entity(name = "tb_sales")
@@ -19,9 +18,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Sale implements Serializable {
-
-    private static final long serialVersionUID = -3689002732097056443L;
+public class Sale {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
