@@ -1,6 +1,7 @@
 package com.eloaca.vendas.entities;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -15,8 +16,7 @@ import java.util.List;
 @Entity(name = "tb_sellers")
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
+@Data
 public class Seller {
 
     @Id
