@@ -4,7 +4,7 @@ import com.eloaca.vendas.dto.SaleDTO;
 import com.eloaca.vendas.dto.SaleSucessDTO;
 import com.eloaca.vendas.dto.SaleSumDTO;
 import com.eloaca.vendas.services.SaleService;
-import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
@@ -16,9 +16,9 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/sales")
-@AllArgsConstructor
 public class SaleController {
 
+    @Autowired
     private SaleService service;
 
     @GetMapping("/findAll")
