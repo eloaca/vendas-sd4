@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from "react";
-import Chart from 'react-apexcharts';
+import Chart from "react-apexcharts";
 import { SaleSucess } from 'types/sale';
 import { round } from 'utils/format';
 import { BASE_URL } from 'utils/requests';
@@ -17,9 +17,9 @@ type ChartData = {
     series: SeriesData[];
 }
 
-const barChart = () => {
+const BarChart = () => {
 
-    const [chartData, setChartData] = useState<ChartData>({
+    const [chartData, setChartData] = useState<ChartData>({        
         labels: {
             categories: []
         },
@@ -70,4 +70,4 @@ const barChart = () => {
     );
 }
 
-export default barChart;
+export default BarChart;
